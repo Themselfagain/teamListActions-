@@ -26,7 +26,15 @@ namespace ListNumsActions
                         //TODO
                         break;
                     case "contains":
-                        //TODO
+                        var element = int.Parse(cmd[1]);
+                        if (nums.Contains(element))
+                        {
+                            Console.WriteLine("YES");
+                        }
+                        else
+                        {
+                            Console.WriteLine("NO");
+                        }
                         break;
                     case "remove":
                         //TODO
