@@ -59,8 +59,10 @@ namespace ListNumsActions
                         var numsResult = nums.Where(x=>x>chislo).ToList();
                         Console.WriteLine(string.Join(" ", numsResult));
                         break;
-                       
                     case "countl":
+                        chislo = int.Parse(cmd[1]);
+                        int count = nums.Where(x => x > chislo).Count();
+                        Console.WriteLine("Count-a e : " + count);
                         break;
                     case "cut":
                         break;
