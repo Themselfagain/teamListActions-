@@ -24,9 +24,12 @@ namespace ListNumsActions
                     case "ins":
                         //TODO
                         break;
+
                     case "del":
-                        //TODO
+                        int itemToRemove = int.Parse(cmd[1]);
+                        nums.Remove(itemToRemove);                   
                         break;
+
                     case "contains":
                         var element = int.Parse(cmd[1]);
                         if (nums.Contains(element))
