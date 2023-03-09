@@ -55,6 +55,18 @@ namespace ListNumsActions
                     case "countl":
                         break;
                     case "cut":
+                        int number = int.Parse(cmd[1]);
+                        if(number >= nums.Count)
+                            {
+                            nums.Clear();
+                            }
+                        else
+                        {
+                            for (int i = 0; i < number; i++)
+                            {
+                                nums.RemoveAt(0);
+                            }
+                        }
                         break;
                     default:
                         break;
