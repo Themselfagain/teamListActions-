@@ -17,6 +17,8 @@ namespace ListNumsActions
                 {
                     break;
                 }
+                
+
                 switch (command)
                 {
                     case "ins":
@@ -37,8 +39,11 @@ namespace ListNumsActions
                         }
                         break;
                     case "remove":
-                        //TODO
+                        int index = 0;
+                        index = int.Parse(cmd[1]);
+                        nums.RemoveAt(index);
                         break;
+                        
                     //TODO
                     case "print":
                     Console.WriteLine(string.Join(" ", nums));
