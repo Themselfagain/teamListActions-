@@ -33,7 +33,7 @@ namespace ListNumsActions
                         break;
 
                     case "contains":
-                        var element = int.Parse(cmd[1]);
+                        element = int.Parse(cmd[1]);
                         if (nums.Contains(element))
                         {
                             Console.WriteLine("YES");
@@ -44,7 +44,7 @@ namespace ListNumsActions
                         }
                         break;
                     case "remove":
-                        int index = 0;
+                        index = 0;
                         index = int.Parse(cmd[1]);
                         nums.RemoveAt(index);
                         break;
