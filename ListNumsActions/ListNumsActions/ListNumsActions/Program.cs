@@ -21,7 +21,9 @@ namespace ListNumsActions
 
                 switch (command)
                 {
-                    case "ins":
+                    case "ins": var index = int.Parse(cmd[1]);
+                        var element = int.Parse(cmd[2]);
+                        nums.Insert(index, element);
                         //TODO
                         break;
 
