@@ -41,7 +41,6 @@ namespace ListNumsActions
                         }
                         break;
                     case "remove":
-                        index = 0;
                         index = int.Parse(cmd[1]);
                         nums.RemoveAt(index);
                         break;                        
@@ -50,8 +49,13 @@ namespace ListNumsActions
                         break;
                     case "add":
                         break;
+
                     case "large":
+                        int chislo = int.Parse(cmd[1]);
+                        var numsResult = nums.Where(x=>x>chislo).ToList();
+                        Console.WriteLine(string.Join(" ", numsResult));
                         break;
+                       
                     case "countl":
                         break;
                     case "cut":
