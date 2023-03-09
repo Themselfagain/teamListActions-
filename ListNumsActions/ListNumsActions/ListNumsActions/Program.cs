@@ -24,14 +24,11 @@ namespace ListNumsActions
                     case "ins": var index = int.Parse(cmd[1]);
                         var element = int.Parse(cmd[2]);
                         nums.Insert(index, element);
-                        //TODO
                         break;
-
                     case "del":
                         int itemToRemove = int.Parse(cmd[1]);
                         nums.Remove(itemToRemove);                   
                         break;
-
                     case "contains":
                         element = int.Parse(cmd[1]);
                         if (nums.Contains(element))
@@ -47,13 +44,18 @@ namespace ListNumsActions
                         index = 0;
                         index = int.Parse(cmd[1]);
                         nums.RemoveAt(index);
-                        break;
-                        
-                    //TODO
+                        break;                        
                     case "print":
                     Console.WriteLine(string.Join(" ", nums));
                         break;
-
+                    case "add":
+                        break;
+                    case "large":
+                        break;
+                    case "countl":
+                        break;
+                    case "cut":
+                        break;
                     default:
                         break;
                 }
