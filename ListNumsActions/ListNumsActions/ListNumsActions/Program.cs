@@ -53,8 +53,13 @@ namespace ListNumsActions
                         int sbor = chislo1+chislo2;
                         nums.Add(sbor);
                         break;
+
                     case "large":
+                        int chislo = int.Parse(cmd[1]);
+                        var numsResult = nums.Where(x=>x>chislo).ToList();
+                        Console.WriteLine(string.Join(" ", numsResult));
                         break;
+                       
                     case "countl":
                         break;
                     case "cut":
